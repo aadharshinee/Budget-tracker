@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget_Counter</title>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head"><h2>Budget_Tracker</h2></div>
+        <div class="upper">
+            <div class="entries">
+                <div class="in_section1">
+                    <p id="Type">Type</p>
+                    <select name="options" id="options">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <div class="in_section2">
+                    <div class="in1">
+                        <p>Name:</p>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="in2">
+                        <p>Amount:</p>
+                        <input type="number" name="amount" id="amount">
+                    </div>
+                </div>
+            </div>
+            <button class="add" onclick="add()">Add To</button>
+            <div class="error"></div>
+        </div>
+        <div class="lower">
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
